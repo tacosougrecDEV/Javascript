@@ -1,11 +1,16 @@
 const toggle = document.getElementById("toggle");
 const mode = document.getElementById("mode");
+const moon = document.getElementById("moon");
+const sun = document.getElementById("sun");
+const text = document.getElementById("texteMode");
 
 toggle.addEventListener("change", (e) => {
     document.body.classList.toggle("dark", e.target.checked);
-    if (mode.innerHTML === "Light Mode") {
-        mode.innerHTML = "Dark Mode";
+    sun.classList.toggle("active", e.target.checked);
+    moon.classList.toggle("active", e.target.unchecked);
+    if (text.innerHTML === "Dark Mode") {
+        text.innerHTML = "Light Mode";
     } else {
-        mode.innerHTML = "Light Mode";
+        text.innerHTML = "Dark Mode";
     }
 })

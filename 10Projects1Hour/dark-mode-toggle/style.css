@@ -26,21 +26,13 @@ body.dark{
     color 0.3s linear;
 }
 
-body.dark label{
-    border: 2px solid white;
-    transition: border 0.3s linear;
-}
-
 label{
     cursor: pointer;
     user-select: none;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     padding: 5px;
-    border-radius: 5px;
-    border: 2px solid #1f1f1f;
-    transition: border 0.3s linear;
 }
 
 input{
@@ -51,4 +43,23 @@ input{
     position: fixed;
     top: 10px;
     right:10px;
+}
+
+#sun{
+    margin-left:-30px;
+    margin-top: -5px;
+}
+
+#sun, #moon{
+    display: none;
+}
+
+#sun.active, #moon.active{
+    display: block;
+}
+
+#texteMode{
+        cursor: auto;
+        top: 17px;
+        right: 55px;
 }
